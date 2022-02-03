@@ -1,0 +1,33 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-image: url(../assets/img/Fotobanner.jpg);
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px 60px;
+    margin: 0px 50px;
+}
+li>a{
+    text-decoration: none;
+    color: cadetblue;
+}
+li>a:hover{
+    background-color: rgb(207, 207, 235);
+}
+.enlacesafotos{
+    padding: 10%;
+    background-color: cadetblue;
+    text-align: center;
+    margin: 10px 100px;
+}
+.enlacesafotos:hover{
+    background-color: rgb(111, 204, 207);
+}
+#h2index{
+    text-align: center;
+    padding: 10px 30px;
+    background-color: rgba(126, 169, 170, 0.712);
+}
