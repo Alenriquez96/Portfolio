@@ -5,31 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio fotográfico</title>
-    <link rel="stylesheet" href="../Portfolio/css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
     <header>
         <nav>
-            <li><a href="../Portfolio/index.html">Inicio</a></li>
-            <li><a href="../Portfolio/pages/biografía.html">Mi biografía</a></li>
-            <li><a href="../Portfolio/pages/portfolio.html">Mi Portfolio</a></li>
-            <li><a href="../Portfolio/pages/contacto.html">Contacto</a></li>
+            <ul>    
+                <a href="./index.html">
+                   <li>Inicio</li>
+                </a>
+                <a href="./pages/biografía.html">
+                    <li>Mi biografía</li>
+                </a>
+                <a href="./pages/portfolio.html">
+                   <li>Mi Portfolio</li> 
+                </a>
+                <a href="./pages/contacto.html">
+                    <li>Contacto</li>
+                </a>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="h2index">
             <h2>Aquí encontrarás mis fotografías :P</h2>
         </section>
-        <section> <a href="./pages/portfolio.html#fotosciudad">
-            <h3 class="enlacesafotos">Fotografías de ciudad</h3>
-            </a>
-        </section>
-        <section><a href="./pages/portfolio.html#fotosnaturaleza">
-            <h3 class="enlacesafotos">Naturaleza</h3>
-            </a>
-        </section>
+        <div id="botones">
+            <section> 
+                <a href="./pages/portfolio.html#fotosciudad">
+                    <h3 class="enlacesafotos">Fotografías de ciudad</h3>
+                </a>
+            </section>
+            <section>
+                <a href="./pages/portfolio.html#fotosnaturaleza">
+                    <h3 class="enlacesafotos">Naturaleza</h3>
+                </a>
+            </section> 
+        </div>
+
     </main>
     <br><br>
     <footer>@Copyright Alberto Enríquez</footer>
+
+       <p><a href="#" id="botonarriba">Arriba</a></p>
+
 </body>
 </html>

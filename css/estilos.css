@@ -1,20 +1,45 @@
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    font-family: "Montserrat";
+    background-color: #111826;
+    color: #F2B66D;
+    margin: 0;
 }
+
 header{
-    background-image: url(../assets/img/Fotobanner.jpg);
+   
+    display: flex;
+
 }
-li{
+header>nav{
+    /* box-sizing: content-box; */
+    height: 70px;
+    position: sticky;
+}
+header>nav>ul{
     list-style-type: none;
-    display: inline-block;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+}
+header>nav>ul>a{
+    text-decoration: none;
+}
+header>nav>ul>a>li{
+
     padding: 20px 60px;
     margin: 0px 50px;
+    text-align: center;
+    height: 100%;
+    font-size: large;
+    color: #F2B66D;
 }
-li>a{
-    text-decoration: none;
-    color: cadetblue;
+header>nav>ul>a:hover{
+    background-color: white;
 }
-li>a:hover{
+
+header>nav>ul>li>a:hover{
     background-color: rgb(207, 207, 235);
 }
 .enlacesafotos{
@@ -28,6 +53,21 @@ li>a:hover{
 }
 #h2index{
     text-align: center;
-    padding: 10px 30px;
-    background-color: rgba(126, 169, 170, 0.712);
+    padding: 30px 0px;
+    background-image: url(../assets/img/Fotobanner.jpg)
+}
+#botones{
+    flex-direction: column;  
+    display: flex;  
+    align-content: space-around;
+    margin: 50px 300px;
+}
+#botonarriba{
+    position: fixed;
+    left: 100%;
+    border-radius: 50%;
+    background-color: #F2B66D;
+    color: #111826;
+    text-decoration: none;
+
 }
