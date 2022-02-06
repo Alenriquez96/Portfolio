@@ -30,6 +30,16 @@ header>nav{
     color: rgb(212, 211, 209);
     
 }
+
+.logo>a{
+    text-decoration: none;
+    color: rgb(212, 211, 209);
+}
+
+.logo>a:visited{
+    color: rgb(212, 211, 209);
+}
+
 header>nav>ul{
     list-style-type: none;
     display: flex;
@@ -141,3 +151,77 @@ img{
       max-width: 100%;
     }
   }
+
+
+/* Biografía */
+
+#bio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#bio>article{
+    width: 50%;
+    text-indent: 2%;
+    text-transform: initial;
+    letter-spacing: 1px;
+}
+#bio>article>p:first-child::first-letter{
+    font-size: 30px;
+}
+
+#bioimg{
+    width: 25%;
+    height: 50%;
+    margin-top: 40px;
+    border-radius: 5%;
+}
+
+
+/* Contacto */
+
+#maincontacto {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#maincontacto>article>p{
+    text-align: center;
+}
+
+#nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#nombre>form>input{
+    width: 280px;
+}
+
+
+#nombre>h3{
+    padding-bottom: 10px;
+}
+
+#checkbox{
+    border: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#checkbox>form>input:last-child{
+    width: 280px;
+}
+
+#checkbox>h3{
+    padding: 15px 0px;
+}
