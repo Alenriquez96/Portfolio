@@ -1,27 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    flex-wrap: wrap;
 
+}
 body{
     font-family: "Montserrat";
-    background-color: #111826;
-    color: #F2B66D;
-    margin: 0;
-}
-
-header{
-   
-    display: flex;
+    background-color: rgb(212, 211, 209);
 
 }
+
+
 header>nav{
-    /* box-sizing: content-box; */
-    height: 70px;
-    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5d4954;
+    width: 100%;
+}
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding-left: 20px;
+    color: rgb(212, 211, 209);
+    
 }
 header>nav>ul{
     list-style-type: none;
     display: flex;
     margin: 0;
-    flex-direction: row;
+    
 }
 header>nav>ul>a{
     text-decoration: none;
@@ -33,41 +46,92 @@ header>nav>ul>a>li{
     text-align: center;
     height: 100%;
     font-size: large;
-    color: #F2B66D;
+    color: rgb(212, 211, 209);
 }
 header>nav>ul>a:hover{
     background-color: white;
+    color: black;
 }
 
-header>nav>ul>li>a:hover{
-    background-color: rgb(207, 207, 235);
+
+
+ /* INDEX */
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .enlacesafotos{
     padding: 10%;
-    background-color: cadetblue;
     text-align: center;
     margin: 10px 100px;
 }
-.enlacesafotos:hover{
-    background-color: rgb(111, 204, 207);
-}
+
 #h2index{
     text-align: center;
     padding: 30px 0px;
-    background-image: url(../assets/img/Fotobanner.jpg)
+
 }
 #botones{
     flex-direction: column;  
     display: flex;  
-    align-content: space-around;
+    align-content: space-between;
     margin: 50px 300px;
+  
 }
-#botonarriba{
-    position: fixed;
-    left: 100%;
-    border-radius: 50%;
-    background-color: #F2B66D;
-    color: #111826;
+#botones>section{
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: cadetblue
+}
+#botones>section>a{
     text-decoration: none;
-
 }
+#botones>section:hover{
+    background-color: aliceblue;
+}
+
+/* PORTFOLIO */
+
+img{
+    width: 100%;
+}
+
+#fotosciudad {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+.columna {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.columna>img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+
+@media (max-width: 768px) {
+    .columna {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+
+@media (max-width: 480px) {
+    .columna {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
