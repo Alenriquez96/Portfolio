@@ -7,53 +7,48 @@
     <title>Portfolio fotográfico</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
+    <!-- NAVBAR -->
     <header>
         <nav>
             <div class="logo">
-              <a href="./index.html"><h4>Web</h4></a>  
+              <a href="./index.html"><h4>Alberto<br>Web</h4></a>  
             </div>
+            <a href="#" class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
             <ul>    
-                <a href="./index.html">
-                   <li>Inicio</li>
-                </a>
-                <a href="./pages/biografía.html">
-                    <li>Biografía</li>
-                </a>
-                <a href="./pages/portfolio.html">
-                   <li>Portfolio</li> 
-                </a>
-                <a href="./pages/contacto.html">
-                    <li>Contacto</li>
-                </a>
+                <li><a href="./pages/biografía.html">Biografía</a></li>
+                <li><a href="./pages/portfolio.html">Portfolio</a></li> 
+                <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
+            
         </nav>
     </header>
-    <main>
-        <section id="h2index">
-            <h2>Aquí encontrarás mis fotografías :P</h2>
-        </section>
-        <div id="botones">
-            <section> 
-                <a href="./pages/portfolio.html#fotosciudad">
-                    <h3 class="enlacesafotos">Ciudad</h3>
-                </a>
-            </section>
-            <section>
-                <a href="./pages/portfolio.html#fotosnatur">
-                    <h3 class="enlacesafotos">Naturaleza</h3>
-                </a>
-            </section> 
-            <section>
-                <a href="./pages/portfolio.html#fotospais">
-                    <h3 class="enlacesafotos">Paisajes</h3>
-                </a>
-            </section> 
-        </div>
-
-    </main>
-    <br><br>
-    <footer>@Copyright Alberto Enríquez</footer>
+    <!-- CONTENIDO -->
+    <div class="banner">
+        <main id="maindex">
+            <div class="indcol indcol1">
+                <h1>Alberto</h1>
+                <p>Bienvenido a mi portfolio web. Aquí encontrarás parte de mi trabajo fotográfico como aficionado. Navega por las secciones para descubrirlo. Si quieres saber más sobre mí, entra en el enlace de abajo.</p>
+                <a href="./pages/biografía.html"><button type="button">Sobre mí</button></a>
+            </div>
+            <div class="indcol indcol2">
+                <div class="card card1">
+                    <h5><a href="./pages/portfolio.html#fotosciudad">Ciudad</a></h5>
+                </div>
+                <div class="card card2">
+                    <h5><a href="./pages/portfolio.html#fotosnatur">Naturaleza</a></h5>
+                </div>
+                <div class="card card3">
+                    <h5><a href="./pages/portfolio.html#fotospais">Paisajes</a></h5>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
